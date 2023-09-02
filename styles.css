@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 80%;
+    margin: 3rem auto;
+}
+
+.top-section{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.top-section .heading1{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+}
+
+.top-section .heading2{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+}
+
+.top-section p{
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    margin: 15px 50px;
+
+}
+
+.bottom-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    position: relative;
+}
+
+.box{
+    background-color: var(--Very-Light-Gray);
+    border-radius: 7px;
+    padding: 1.2rem;
+    position: relative;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-img{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+}
+
+.bottom-section .box1{
+    border-top: 5px solid hsl(180, 62%, 55%);
+    top: 5rem
+}
+
+.bottom-section .box2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.bottom-section .box3{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.bottom-section .box4{
+    border-top: 5px solid hsl(212, 86%, 64%);
+    top: 5rem;
+}
+
+.box h3{
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.box p{
+    color:var(--Grayish-Blue);
+}
+
+.flex-group{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+
+/* responsive styles */
+
+@media(max-width: 768px){
+    .bottom-section .box1,.bottom-section .box4 {
+        top: unset;
+    }
+    
+    .top-section .heading1{
+        font-size: 18px
+    }
+
+    .top-section .heading2{
+        font-size: 18px
+    }
+
+    .top-section p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+
+
+
